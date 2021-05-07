@@ -9,8 +9,8 @@
             c.height = window.innerHeight;
             c.width = window.innerWidth;
 
-            var chinese = "田由甲申甴电甶男甸甹町画甼甽甾甿畀畁畂畃畄畅畆畇畈畉畊畋界畍畎畏畐畑";
-            chinese = chinese.split("");
+            var text = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz1234567890!@#$%^&*";
+            text = text.split("");
 
             var font_size = 10;
             var columns = c.width/font_size;
@@ -26,7 +26,7 @@
 	            ctx.font = font_size + "px arial";
 
 	            for (var i = 0; i < drops.length; i++) {
-	                var text = chinese[Math.floor(Math.random()*chinese.length)];
+	                var text = text[Math.floor(Math.random()*text.length)];
 		            //x = i*font_size, y = value of drops[i]*font_size
 		            ctx.fillText(text, i*font_size, drops[i]*font_size);
 	                if (drops[i] * font_size > c.height && Math.random() > 0.975)
