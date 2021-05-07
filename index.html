@@ -3,6 +3,7 @@
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type = "text/javascript">
+	window.onload(function() {
             var c = document.getElementById("c");
             var ctx = document.getElementById("c").getContext("2d");
 
@@ -35,7 +36,8 @@
 		            drops[i]++;
 	            }
              }
-            setInterval(draw, 33);
+            setInterval(draw, 33
+	})
         </script>
         <style type = "text/css">
             body {
